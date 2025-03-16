@@ -33,11 +33,11 @@ Generate Pivot Tables for key insights:
 ![screenshot](images/Turla%20(FPT).png)
 - ### Interactive slicers and filters
 ![screenshot](images/Turla%20(FSF).png)
-- ### Map visualization
-![screenshot](images/Turla%20(M).png)
+ 
 
 ## Here is the Final Dashboard Output 
 ![screenshot](images/Turla%20(FD).png)
 
-
+## Map Visualization
+![screenshot](images/Turla%20(M).png)
 
