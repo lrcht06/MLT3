@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Midterm Lab Task 3</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="stars"></div>
+  <div id="twinkling"></div>
+
+  <audio id="bg-music" autoplay loop>
+    <source src="assets/ITbgmusic.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <h1 class="clickable">Midterm Lab Task 3: Creating PIVOT TABLE and DASHBOARD</h1>
+    <p>This portfolio highlights the process of creating Pivot Tables and a Dashboard to visualize insights from a transformed dataset. The dataset includes multiple related tables that were cleaned and structured using Power Query.</p>
+
+    <hr />
+
+    <h2 class="clickable">STEP 1. Data Preparation Using Power Query</h2>
+    <ul>
+      <li>Load the cleaned dataset and transformed tables from Midterm Lab Task 2</li>
+      <li>Ensure data consistency and proper formatting</li>
+      <li>Create additional queries if needed for further analysis</li>
+    </ul>
+
+    <hr />
+
+    <h2 class="clickable">STEP 2. Creating Pivot Tables in Excel</h2>
+    <ul>
+      <li><strong>Generate Pivot Tables for key insights:</strong></li>
+      <li>State with the highest number of Data Science jobs</li>
+      <li>Job Role with the highest average salary</li>
+      <li>Company size that pays the highest salaries</li>
+      <li>Sector that employs the highest and lowest number of Data Science roles</li>
+      <li>Sector with the minimum and maximum average salaries (requires additional query)</li>
+    </ul>
+    
+    <hr />
+
+    <h2 class="clickable">STEP 3. Creating the Dashboard</h2>
+    <ul>
+      <li>Design a Dashboard incorporating all Pivot Tables</li>
+      <li>Use charts such as bar charts, pie charts, and column charts for visualization</li>
+      <li>Insert slicers for Role Type, Company Size, and State to make the Dashboard interactive</li>
+      <li>Include a Map visualization if supported by Excel version</li>
+      <li>Apply professional and visually appealing color schemes</li>
+      <li>Ensure all necessary visuals and reports are included</li>
+    </ul>
+
+    <hr />
+    
+   <h2 class="clickable">STEP 4. Here is the screenshot before I started creating pivot tables and charts (see screenshot)</h2>
+   <div class="image-column">
+      <img src="images/Turla%20(FBD).png" alt="STEP 4. Here is the screenshot before I started creating pivot tables and charts (see screenshot)" />
+   </div>
+
+    <hr />
+    
+   <h2 class="clickable">STEP 5. Here is the screenshot after I started creating pivot tables and charts (see screenshot)</h2>
+   <div class="image-column">
+      <img src="images/Turla%20(FAD).png" alt="STEP 5. Here is the screenshot after I started creating pivot tables and charts (see screenshot)" />
+   </div>
+
+   <hr />
+
+   <h2 class="clickable">Final Tables and Charts</h2>
+    <div class="image-column">
+      <h3>Pivot Table setup for each analysis</h3>
+      <img src="images/Turla%20(FPT).png" alt="Pivot Table setup for each analysis" />
+      <h3>Interactive slicers and filters</h3>
+      <img src="images/Turla%20(FSF).png" alt="Interactive slicers and filters" />
+    </div>
+
+   <hr />
+
+   <h2 class="clickable">Here is the Final Dashboard Output</h2>
+   <div class="image-column">
+      <img src="images/Turla%20(FD).png" alt="Here is the Final Dashboard Output" />
+   </div>
+
+   <hr />
+
+   <h2 class="clickable">Map Visualization</h2>
+   <div class="image-column">
+      <img src="images/Turla%20(M).png" alt="Map Visualization" />
+   </div>
+     
+  <script>
+    document.addEventListener("mousemove", (e) => {
+      const trail = document.createElement("div");
+      trail.className = "cursor-trail";
+      trail.style.left = `${e.pageX}px`;
+      trail.style.top = `${e.pageY}px`;
+      document.body.appendChild(trail);
+      setTimeout(() => trail.remove(), 1000);
+    });
+
+    document.querySelectorAll(".clickable").forEach(el => {
+      el.addEventListener("click", () => {
+        el.classList.add("clicked");
+        setTimeout(() => el.classList.remove("clicked"), 300);
+      });
+    });
+  </script>
+</body>
+</html>
